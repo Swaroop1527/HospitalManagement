@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\angularprojects\\Repositories\\WebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{016D5B47-CC2F-4CEA-8C98-A05BD3DA4A18}|HospitalManagement\\HospitalManagement.csproj|c:\\angularprojects\\repositories\\webapp\\hospitalmanagement\\controllers\\headofficecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016D5B47-CC2F-4CEA-8C98-A05BD3DA4A18}|HospitalManagement\\HospitalManagement.csproj|solutionrelative:hospitalmanagement\\controllers\\headofficecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AEC3B5-4838-439C-BD60-73AF3490362D}|..\\Core\\HospitalManagement.Core.Common\\HospitalManagement.Core.Common.csproj|c:\\angularprojects\\repositories\\core\\hospitalmanagement.core.common\\models\\headoffice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016D5B47-CC2F-4CEA-8C98-A05BD3DA4A18}|HospitalManagement\\HospitalManagement.csproj|c:\\angularprojects\\repositories\\webapp\\hospitalmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016D5B47-CC2F-4CEA-8C98-A05BD3DA4A18}|HospitalManagement\\HospitalManagement.csproj|solutionrelative:hospitalmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HeadOfficeController.cs",
+              "DocumentMoniker": "C:\\angularprojects\\Repositories\\WebApp\\HospitalManagement\\Controllers\\HeadOfficeController.cs",
+              "RelativeDocumentMoniker": "HospitalManagement\\Controllers\\HeadOfficeController.cs",
+              "ToolTip": "C:\\angularprojects\\Repositories\\WebApp\\HospitalManagement\\Controllers\\HeadOfficeController.cs",
+              "RelativeToolTip": "HospitalManagement\\Controllers\\HeadOfficeController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T07:03:11.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HeadOffice.cs",
+              "DocumentMoniker": "C:\\angularprojects\\Repositories\\Core\\HospitalManagement.Core.Common\\Models\\HeadOffice.cs",
+              "RelativeDocumentMoniker": "..\\Core\\HospitalManagement.Core.Common\\Models\\HeadOffice.cs",
+              "ToolTip": "C:\\angularprojects\\Repositories\\Core\\HospitalManagement.Core.Common\\Models\\HeadOffice.cs",
+              "RelativeToolTip": "..\\Core\\HospitalManagement.Core.Common\\Models\\HeadOffice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T07:32:47.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\angularprojects\\Repositories\\WebApp\\HospitalManagement\\Program.cs",
+              "RelativeDocumentMoniker": "HospitalManagement\\Program.cs",
+              "ToolTip": "C:\\angularprojects\\Repositories\\WebApp\\HospitalManagement\\Program.cs",
+              "RelativeToolTip": "HospitalManagement\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T07:02:14.263Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
