@@ -34,7 +34,7 @@ namespace HospitalManagement.Core.Common.Models
         public override string? Address { get; set; }
 
         [JsonProperty]
-        public long MobileNumber { get; set; }
+        public override long? MobileNumber { get; set; }
 
         [JsonProperty]
         public override string? Email {  get; set; }

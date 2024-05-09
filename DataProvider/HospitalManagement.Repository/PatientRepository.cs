@@ -46,7 +46,6 @@ namespace HospitalManagement.Repository
 
         }
 
-
         public Patient GetPatient(Guid patientId)
         {
             for (int i = 0; i < RETRY_COUNT; i++)
@@ -144,6 +143,5 @@ namespace HospitalManagement.Repository
             }
             return null;
         }
-
     }
 }

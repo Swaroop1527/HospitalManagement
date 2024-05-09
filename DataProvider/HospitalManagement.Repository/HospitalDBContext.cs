@@ -18,7 +18,7 @@ namespace HospitalManagement.Repository
         {
             _hospitalDBConnectionInfo = hospitalDBConnectionInfo;
             base.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
-           // Database.EnsureDeleted();
+            //Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 

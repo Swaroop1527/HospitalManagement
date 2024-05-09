@@ -17,6 +17,10 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
 
         APIResult<bool> DeleteBranch(Guid branchId);
 
-        APIResult<List<Branch>> GetAllBranches();  
+        APIResult<List<Branch>> GetAllBranches();
+
+        APIResult<List<Branch>> GetSearchBranchName(string branchName);
+
+        APIResult<List<Branch>> GetBranchCode(string branchCode);
     }
 }

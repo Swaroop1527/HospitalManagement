@@ -102,6 +102,5 @@ namespace HospitalManagement.Dataprovider.Services
             }
             return result;
         }
-
     }
 }

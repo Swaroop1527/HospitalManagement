@@ -27,9 +27,7 @@ namespace HospitalManagement.Services
 
         public APIResult<Branch> GetBranch(Guid branchId)
         {
-            return _dataProviderCommunicator.GetServerResponse<Branch>($"{BranchRouteConstants.GetBranch}?branchId={branchId}","");
-           // return _dataProviderCommunicator.PostToServer<Branch>($"{BranchRouteConstants.GetBranch}", branchId,"");
-        
+            return _dataProviderCommunicator.GetServerResponse<Branch>($"{BranchRouteConstants.GetBranch}?branchId={branchId}","");        
         }
 
         public APIResult<bool> UpdateBranch(Branch branch)
@@ -46,6 +44,16 @@ namespace HospitalManagement.Services
         {
             
             return _dataProviderCommunicator.GetServerResponse<List<Branch>>($"{BranchRouteConstants.GetAllBranches}", "");
+        }
+
+        public APIResult<List<Branch>> GetSearchBranchName(string branchName)
+        {
+            return _dataProviderCommunicator.GetServerResponse<List<Branch>>($"{BranchRouteConstants.GetSearchBranchName}?branchName={branchName}", "");
+        }
+
+        public APIResult<List<Branch>> GetBranchCode(string branchCode)
+        {
+            return _dataProviderCommunicator.GetServerResponse<List<Branch>>($"{BranchRouteConstants.GetBranchCode}?branchCode={branchCode}", "");
         }
     }
 }

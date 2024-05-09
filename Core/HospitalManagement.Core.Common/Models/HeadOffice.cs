@@ -26,12 +26,12 @@ namespace HospitalManagement.Core.Common.Models
         public override string? Address { get; set; }
 
         [JsonProperty]
+        public override long? MobileNumber { get; set; }
+
+        [JsonProperty]
         public string? Website { get; set; }
 
         [JsonProperty]
         public override string? Email { get; set;  }
-
-        //[JsonProperty]
-        //public List<Branch> Branches { get; set; } = new List<Branch>();
     }
 }

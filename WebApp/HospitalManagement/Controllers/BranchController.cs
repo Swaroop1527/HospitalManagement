@@ -124,5 +124,45 @@ namespace HospitalManagement.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpGet(nameof(GetSearchBranchName))]
+        public IActionResult GetSearchBranchName([FromQuery] string branchName)
+        {
+            APIResult<List<Branch>> result = new APIResult<List<Branch>>();
+            try
+            {
+                result = _branchService.GetSearchBranchName(branchName);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                APIResultHelper.UpdateException(ex, result);
+            }
+
+            return BadRequest(result);
+        }
+
+        [HttpGet(nameof(GetBranchCode))]
+        public IActionResult GetBranchCode([FromQuery] string branchCode)
+        {
+            APIResult<List<Branch>> result = new APIResult<List<Branch>>();
+            try
+            {
+                result = _branchService.GetBranchCode(branchCode);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                APIResultHelper.UpdateException(ex, result);
+            }
+
+            return BadRequest(result);
+        }
     }
 }

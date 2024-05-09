@@ -25,8 +25,6 @@ namespace HospitalManagement.Controllers
             return Ok("You have successfully reached the Patient Controller");
         }
 
-
-
         [HttpPost(nameof(AddPatient))]
         public IActionResult AddPatient([FromBody] Patient patient)
         {
@@ -121,6 +119,5 @@ namespace HospitalManagement.Controllers
             }
             return BadRequest(result);
         }
-
     }
 }

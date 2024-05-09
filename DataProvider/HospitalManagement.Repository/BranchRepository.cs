@@ -146,5 +146,47 @@ namespace HospitalManagement.Repository
             }
             return null;
         }
+
+        public List<Branch> GetSearchBranchName(string branchName)
+        {
+            for (int i = 0; i < RETRY_COUNT; i++)
+            {
+                try
+                {
+                    using (HospitalDBContext context = new HospitalDBContext(_hospitalDBConnectionInfo))
+                    {
+                        List<Branch> branch = context.Branch.Where(b => b.BranchName == branchName).ToList();   
+                        return branch;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical(0, ex.Message, "Error getting on save!");
+                }
+            }
+            return null;
+        }
+
+        public List<Branch> GetBranchCode(string branchCode)
+        {
+            for (int i = 0; i < RETRY_COUNT; i++)
+            {
+                try
+                {
+                    using (HospitalDBContext context = new HospitalDBContext(_hospitalDBConnectionInfo))
+                    {
+                        List<Branch> branch = context.Branch.Where(b => b.BranchCode == branchCode).ToList();
+                        return branch;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical(0, ex.Message, "Error getting on save!");
+                }
+            }
+            return null;
+        }
+
+
     }
 }

@@ -104,5 +104,41 @@ namespace HospitalManagement.Dataprovider.Services
             }
             return result;
         }
+
+        public APIResult<List<Branch>> GetSearchBranchName(string branchName)
+        {
+            APIResult<List<Branch>> result = new APIResult<List<Branch>>();
+
+            List<Branch> branch = _branchRepository.GetSearchBranchName(branchName);
+
+            if (branch != null && branch.Any())
+            {
+                result.Result = branch;
+            }
+            else
+            {
+                result.Suceess = false;
+                APIResultHelper.UpdateError("$No branch is found {branchName}", result);
+            }
+            return result;
+        }
+
+        public APIResult<List<Branch>> GetBranchCode(string branchCode)
+        {
+            APIResult<List<Branch>> result = new APIResult<List<Branch>>();
+
+            List<Branch> branch = _branchRepository.GetBranchCode(branchCode);
+
+            if (branch != null && branch.Any())
+            {
+                result.Result = branch;
+            }
+            else
+            {
+                result.Suceess = false;
+                APIResultHelper.UpdateError("$No branch is found {branchCode}", result);
+            }
+            return result;
+        }
     }
 }

@@ -18,6 +18,5 @@ namespace HospitalManagement.Common.Interfaces
         APIResult<bool> DeleteDoctor(Guid doctorId);
 
         APIResult<List<Doctor>> GetAllDoctors();
-
     }
 }
