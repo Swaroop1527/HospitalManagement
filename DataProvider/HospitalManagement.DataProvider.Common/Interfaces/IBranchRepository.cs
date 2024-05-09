@@ -24,6 +24,6 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
         List<Branch> GetSearchBranchName(string branchName);
 
         List<Branch> GetBranchCode(string branchCode);
-        Branch GetBranchByBranchCode(string branchCode);
+       
     }
 }

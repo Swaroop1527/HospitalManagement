@@ -23,6 +23,6 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
 
         APIResult<List<Branch>> GetBranchCode(string branchCode);
 
-        APIResult<Branch> GetBranchByBranchCode(string branchCode);
+        
     }
 }
