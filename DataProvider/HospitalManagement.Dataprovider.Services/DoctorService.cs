@@ -101,5 +101,22 @@ namespace HospitalManagement.Dataprovider.Services
             }
             return result;
         }
+
+
+        public APIResult<List<Doctor>> GetDoctorBySpecialization(string specialization)
+        {
+            APIResult<List<Doctor>> result = new APIResult<List<Doctor>>();
+            List<Doctor> doctors = _doctorRepository.GetDoctorBySpecialization(specialization);
+            if (doctors != null && doctors.Any())
+            {
+                result.Result = doctors;
+            }
+            else
+            {
+                result.Suceess = false;
+                APIResultHelper.UpdateError($"No doctor information is available with the provided specialization {specialization}", result);
+            }
+            return result;
+        }
     }
 }

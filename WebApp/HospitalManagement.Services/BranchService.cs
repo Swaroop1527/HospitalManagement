@@ -47,5 +47,10 @@ namespace HospitalManagement.Services
             
             return _dataProviderCommunicator.GetServerResponse<List<Branch>>($"{BranchRouteConstants.GetAllBranches}", "");
         }
+
+        public APIResult<Branch> GetBranchByBranchCode(string branchCode)
+        {
+            return _dataProviderCommunicator.GetServerResponse<Branch>($"{BranchRouteConstants.GetBranchByBranchCode}?branchCode={branchCode}", "");
+        }
     }
 }

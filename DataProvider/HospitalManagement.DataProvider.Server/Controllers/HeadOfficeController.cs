@@ -123,5 +123,24 @@ namespace HospitalManagement.DataProvider.Server.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpGet(nameof(GetHeadOfficeByName))]
+        public IActionResult GetHeadOfficeByName(string headOfficeName)
+        {
+            APIResult<HeadOffice> result = new APIResult<HeadOffice>();
+            try
+            {
+                result = _headOfficeService.GetHeadOfficeByName(headOfficeName);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                APIResultHelper.UpdateException(ex, result);
+            }
+            return BadRequest(result);
+        }
     }
 }

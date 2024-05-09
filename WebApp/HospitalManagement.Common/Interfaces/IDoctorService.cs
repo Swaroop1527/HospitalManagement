@@ -19,5 +19,7 @@ namespace HospitalManagement.Common.Interfaces
 
         APIResult<List<Doctor>> GetAllDoctors();
 
+        APIResult<List<Doctor>> GetDoctorBySpecialization(string specialization);
+
     }
 }

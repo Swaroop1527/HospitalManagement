@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace HospitalManagement.DataProvider.Common.Interfaces
@@ -16,7 +17,8 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
         bool UpdateBranch(Branch branch);
 
         bool DeleteBranch(Guid branchId);
+        List<Branch> GetAllBranches();
 
-        List<Branch> GetAllBranches(); 
+        Branch GetBranchByBranchCode(string branchCode);
     }
 }

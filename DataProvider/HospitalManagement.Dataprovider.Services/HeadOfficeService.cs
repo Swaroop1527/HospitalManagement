@@ -110,5 +110,21 @@ namespace HospitalManagement.Dataprovider.Services
             }
             return result;
         }
+
+        public APIResult<HeadOffice> GetHeadOfficeByName(string headOfficeName)
+        {
+            APIResult<HeadOffice> result = new APIResult<HeadOffice>();
+            HeadOffice headOffice = _hospitalSQLRepository.GetHeadOfficeByName(headOfficeName);
+            if (headOffice != null)
+            {
+                result.Result = headOffice;
+            }
+            else
+            {
+                result.Suceess = false;
+                APIResultHelper.UpdateError($"No headoffice is found with the given name {headOfficeName}", result);
+            }
+            return result;
+        }
     }
 }

@@ -20,5 +20,7 @@ namespace HospitalManagement.Common.Interfaces
 
         APIResult<List<HeadOffice>> GetAllHeadOffices();
 
+        APIResult<HeadOffice> GetHeadOfficeByName(string headOfficeName);
+
     }
 }

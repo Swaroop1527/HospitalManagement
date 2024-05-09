@@ -39,5 +39,10 @@ namespace HospitalManagement.Services
         {
             return _dataProviderCommunicator.GetServerResponse<List<HeadOffice>>($"{HeadOfficeRouteConstatnts.GetHeadOfficeList}", "");
         }
+
+        public APIResult<HeadOffice> GetHeadOfficeByName(string headOfficeName)
+        {
+            return _dataProviderCommunicator.GetServerResponse<HeadOffice>($"{HeadOfficeRouteConstatnts.GetHeadOfficeByName}?headOfficeName={headOfficeName}", "");
+        }
     }
 }

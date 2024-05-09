@@ -19,5 +19,7 @@ namespace HospitalManagement.Common.Interfaces
 
         APIResult<List<Branch>> GetAllBranches();
 
+        APIResult<Branch> GetBranchByBranchCode(string branchCode);
+
     }
 }

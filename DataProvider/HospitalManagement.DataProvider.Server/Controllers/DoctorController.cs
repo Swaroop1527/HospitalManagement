@@ -117,5 +117,24 @@ namespace HospitalManagement.DataProvider.Server.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpGet(nameof(GetDoctorBySpecialization))]
+        public IActionResult GetDoctorBySpecialization([FromQuery] string specialization)
+        {
+            APIResult<List<Doctor>> result = new APIResult<List<Doctor>>();
+            try
+            {
+                result = _doctorService.GetDoctorBySpecialization(specialization);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                APIResultHelper.UpdateException(ex, result);
+            }
+            return BadRequest(result);
+        }
     }
 }

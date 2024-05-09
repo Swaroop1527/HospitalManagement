@@ -15,5 +15,8 @@ namespace HospitalManagement.Core.Common.CommonPropertiesForModel
 
         [JsonProperty]
         public abstract string? Email { get; set; }
+
+        [JsonProperty]
+        public abstract long? MobileNumber {  get; set; }
     }
 }

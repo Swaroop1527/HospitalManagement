@@ -18,5 +18,7 @@ namespace HospitalManagement.Core.Common.Constants.DataProviderRouteConstants.Br
 
         public const string GetAllBranches = "Branch/GetAllBranches";
 
+        public const string GetBranchByBranchCode = "Branch/GetBranchByBranchCode";
+
     }
 }

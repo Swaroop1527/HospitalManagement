@@ -18,5 +18,7 @@ namespace HospitalManagement.Common.Interfaces
         APIResult<bool> DeletePatient(Guid patientId);
 
         APIResult<List<Patient>> GetAllPatients();
+
+        APIResult<List<Patient>> GetPatientsByReasonOfVisit(string reasonOfVisit);
     }
 }

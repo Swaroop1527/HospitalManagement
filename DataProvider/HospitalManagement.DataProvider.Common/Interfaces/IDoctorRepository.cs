@@ -18,5 +18,7 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
         bool DeleteDoctor(Guid doctorId);
 
         List<Doctor> GetAllDoctors();
+
+        List<Doctor> GetDoctorBySpecialization(string specialization);
     }
 }

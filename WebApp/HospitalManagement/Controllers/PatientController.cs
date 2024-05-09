@@ -122,5 +122,25 @@ namespace HospitalManagement.Controllers
             return BadRequest(result);
         }
 
+
+        [HttpGet(nameof(GetPatientsByReasonOfVisit))]
+        public IActionResult GetPatientsByReasonOfVisit([FromQuery] string reasonOfVisit)
+        {
+            APIResult<List<Patient>> result = new APIResult<List<Patient>>();
+            try
+            {
+                result = _patientService.GetPatientsByReasonOfVisit(reasonOfVisit);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                APIResultHelper.UpdateException(ex, result);
+            }
+            return BadRequest(result);
+        }
+
     }
 }

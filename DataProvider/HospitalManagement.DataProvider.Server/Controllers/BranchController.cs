@@ -119,5 +119,24 @@ namespace HospitalManagement.DataProvider.Server.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpGet(nameof(GetBranchByBranchCode))]
+        public IActionResult GetBranchByBranchCode(string branchCode)
+        {
+            APIResult<Branch> result = new APIResult<Branch>();
+            try
+            {
+                result = _branchServices.GetBranchByBranchCode(branchCode);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                APIResultHelper.UpdateException(ex, result);
+            }
+            return BadRequest(result);
+        }
     }
 }

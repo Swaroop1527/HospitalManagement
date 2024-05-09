@@ -146,5 +146,25 @@ namespace HospitalManagement.Repository
             }
             return null;
         }
+
+        public Branch GetBranchByBranchCode(string branchCode)
+        {
+            for (int i = 0; i < RETRY_COUNT; i++)
+            {
+                try
+                {
+                    using (HospitalDBContext context = new HospitalDBContext(_hospitalDBConnectionInfo))
+                    {
+                        Branch? branch = context.Branch.FirstOrDefault(b => b.BranchCode == branchCode);
+                        return branch;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical(0, ex.Message, "Error on retrieving the branch information with the provided id");
+                }
+            }
+            return null;
+        }
     }
 }

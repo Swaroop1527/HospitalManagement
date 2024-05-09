@@ -103,5 +103,21 @@ namespace HospitalManagement.Dataprovider.Services
             return result;
         }
 
+        public APIResult<List<Patient>> GetPatientsByReasonOfVisit(string reasonOfVisit)
+        {
+            APIResult<List<Patient>> result = new APIResult<List<Patient>>();
+            List<Patient> patients = _patientRepository.GetPatientsByReasonOfVisit(reasonOfVisit);
+            if (patients != null && patients.Any())
+            {
+                result.Result = patients;
+            }
+            else
+            {
+                result.Suceess = false;
+                APIResultHelper.UpdateError($"No patients were founded with the provided reasonofvisit {reasonOfVisit}", result);
+            }
+            return result;
+        }
+
     }
 }

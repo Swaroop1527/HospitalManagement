@@ -18,5 +18,7 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
         APIResult<bool> DeleteHeadOffice(Guid headOfficeId);
 
         APIResult<List<HeadOffice>> GetAllHeadOffices();
+
+        APIResult<HeadOffice> GetHeadOfficeByName(string headOfficeName);
     }
 }

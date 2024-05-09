@@ -44,5 +44,10 @@ namespace HospitalManagement.Services
         {
             return _dataProviderCommunicator.GetServerResponse<List<Doctor>>($"{DoctorRouteConstants.GetAllDoctors}", "");
         }
+
+        public APIResult<List<Doctor>> GetDoctorBySpecialization(string specialization)
+        {
+            return _dataProviderCommunicator.GetServerResponse<List<Doctor>>($"{DoctorRouteConstants.GetDoctorBySpecialization}?specialization={specialization}", "");
+        }
     }
 }
