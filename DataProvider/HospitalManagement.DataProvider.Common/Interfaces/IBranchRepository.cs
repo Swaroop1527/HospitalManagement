@@ -19,7 +19,7 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
         bool DeleteBranch(Guid branchId);
         List<Branch> GetAllBranches();
 
-        List<Branch> GetAllBranches();
+       
 
         List<Branch> GetSearchBranchName(string branchName);
 

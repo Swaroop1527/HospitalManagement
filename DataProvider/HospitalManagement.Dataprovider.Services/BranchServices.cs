@@ -136,9 +136,26 @@ namespace HospitalManagement.Dataprovider.Services
             else
             {
                 result.Suceess = false;
-                APIResultHelper.UpdateError("$No branch is found {branchCode}", result);
+                APIResultHelper.UpdateError($"No branch is found {branchCode}", result);
             }
             return result;
+        }
+
+        public APIResult<Branch> GetBranchByBranchCode(string branchCode)
+        {
+            APIResult<Branch> result = new APIResult<Branch>();
+            Branch branch = _branchRepository.GetBranchByBranchCode(branchCode);
+            if (branch != null)
+            {
+                result.Result = branch;
+            }
+            else
+            {
+                result.Suceess = false;
+                APIResultHelper.UpdateError($"No branch found with the given branchcode {branchCode}",result);
+            }
+            return result ;
+
         }
     }
 }
