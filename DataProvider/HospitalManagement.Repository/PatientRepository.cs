@@ -143,5 +143,26 @@ namespace HospitalManagement.Repository
             }
             return null;
         }
+
+        public List<Patient> GetPatientsByReasonOfVisit(string reasonOfVisit)
+        {
+            for (int i = 0; i < RETRY_COUNT; i++)
+            {
+                try
+                {
+                    using (HospitalDBContext context = new HospitalDBContext(_hospitalDBConnectionInfo))
+                    {
+                        List<Patient> patients = context.Patient.Where(p => p.ReasonForVisit == reasonOfVisit).ToList();
+                        return patients;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical(0, ex.Message, "Error on retrieving the patient information with the provided id");
+                }
+            }
+            return null;
+        }
+
     }
 }

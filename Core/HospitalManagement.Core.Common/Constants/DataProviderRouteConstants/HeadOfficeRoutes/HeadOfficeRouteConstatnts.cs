@@ -17,5 +17,7 @@ namespace HospitalManagement.Core.Common.Constants.DataProviderRouteConstants.He
         public const string DeleteHeadOffice = "HeadOffice/DeleteHeadOffice";
 
         public const string GetHeadOfficeList = "HeadOffice/GetAllHeadOffices";
+
+        public const string GetHeadOfficeByName = "HeadOffice/GetHeadOfficeByName";
     }
 }

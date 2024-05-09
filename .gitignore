@@ -31,6 +31,7 @@
 /WebApp/.vs/HospitalManagement/FileContentIndex/9e4f4092-ebbf-48e4-94f1-207cbdaadd50.vsidx
 /WebApp/.vs/HospitalManagement/FileContentIndex/ffc61814-07df-4302-8b98-cc423f1b8684.vsidx
 /WebApp/.vs/HospitalManagement/v17/.suo
+<<<<<<< HEAD
 /WebApp/.vs/HospitalManagement/FileContentIndex/0b77db58-9442-45b5-ba41-4c49fa3c206f.vsidx
 /WebApp/.vs/HospitalManagement/FileContentIndex/1ae2f76a-bebe-4912-bc45-d2cf3813b521.vsidx
 /WebApp/.vs/HospitalManagement/FileContentIndex/2550b197-a816-487c-aac1-c4ea6313c21c.vsidx
@@ -43,8 +44,26 @@
 /WebApp/.vs/HospitalManagement/FileContentIndex/4a8170ba-07c5-43ec-96a2-48391197afc6.vsidx
 /WebApp/.vs/HospitalManagement/DesignTimeBuild/.dtbcache.v2
 *.vsidx
+=======
+/WebApp/.vs/HospitalManagement/FileContentIndex/4a8170ba-07c5-43ec-96a2-48391197afc6.vsidx
+/WebApp/.vs/HospitalManagement/FileContentIndex/399401e5-a768-4f89-917d-6396bb919b5a.vsidx
+/WebApp/.vs/HospitalManagement/FileContentIndex/b226764d-ddf1-450b-8a9f-8520b9afe24e.vsidx
+/WebApp/.vs/HospitalManagement/FileContentIndex/47613ba9-8394-4979-baae-844a384c2da5.vsidx
+*.vsidx
+/WebApp/.vs/HospitalManagement/FileContentIndex/c75c8606-a187-4ff3-aca0-9058c3452885.vsidx
+/WebApp/.vs/HospitalManagement/DesignTimeBuild/.dtbcache.v2
+/WebApp/.vs/HospitalManagement/v17/DocumentLayout.json
+/WebApp/.vs/HospitalManagement/FileContentIndex/47613ba9-8394-4979-baae-844a384c2da5.vsidx
+/WebApp/.vs/HospitalManagement/FileContentIndex/4a8170ba-07c5-43ec-96a2-48391197afc6.vsidx
+>>>>>>> aa4a72f530fce3dc4c384726ea4bfc3b010e5223
 /WebApp/.vs/HospitalManagement/FileContentIndex/c75c8606-a187-4ff3-aca0-9058c3452885.vsidx
 /WebApp/.vs/HospitalManagement/v17/.futdcache.v2
 /WebApp/.vs/ProjectEvaluation/hospitalmanagement.metadata.v7.bin
 /WebApp/.vs/ProjectEvaluation/hospitalmanagement.projects.v7.bin
+<<<<<<< HEAD
 /WebApp/.vs/HospitalManagement/v17/DocumentLayout.json
+=======
+>>>>>>> aa4a72f530fce3dc4c384726ea4bfc3b010e5223
+/.gitignore
+/.gitignore
+/.gitignore

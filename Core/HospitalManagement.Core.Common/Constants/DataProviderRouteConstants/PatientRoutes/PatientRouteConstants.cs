@@ -18,6 +18,8 @@ namespace HospitalManagement.Core.Common.Constants.DataProviderRouteConstants.Pa
         public const string DeletePatient = "Patient/DeletePatient";
 
         public const string GetAllPatients = "Patient/GetAllPatients";
+
+        public const string GetPatientsByReasonOfVisit = "Patient/GetPatientsByReasonOfVisit";
     }
 
 }

@@ -23,5 +23,7 @@ namespace HospitalManagement.Common.Interfaces
 
         APIResult<List<Branch>> GetBranchCode(string branchCode);
         APIResult<bool> UpdatesBranch(object branchName, object branchCode, object services, object branchManagerName, object address, object mobileNumber, object email);
+        APIResult<Branch> GetBranchByBranchCode(string branchCode);
+
     }
 }

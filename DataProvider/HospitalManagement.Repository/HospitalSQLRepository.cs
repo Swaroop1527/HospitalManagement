@@ -148,5 +148,29 @@ namespace HospitalManagement.Repository
             }
             return null;
         }
+
+        public HeadOffice GetHeadOfficeByName(string headOfficeName)
+        {
+            for (int i = 0; i < RETRY_COUNT; i++)
+            {
+                try
+                {
+                    using (HospitalDBContext context = new HospitalDBContext(_hospitalDBConnectionInfo))
+                    {
+
+                        HeadOffice? headOffice = context.HeadOffice.FirstOrDefault(h => h.HeadOfficeName == headOfficeName);
+                        if (headOffice != null)
+                        {
+                            return headOffice;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical(0, ex.Message, "Error on retrieving headoffice with the provided name");
+                }
+            }
+            return null;
+        }
     }
 }

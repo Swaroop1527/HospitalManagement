@@ -19,5 +19,7 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
 
         List<Patient> GetAllPatients();
 
+        List<Patient> GetPatientsByReasonOfVisit(string reasonOfVisit);
+
     }
 }

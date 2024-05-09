@@ -33,5 +33,7 @@ namespace HospitalManagement.Core.Common.Models
 
         [JsonProperty]
         public override string? Email { get; set;  }
+
+       
     }
 }

@@ -17,5 +17,7 @@ namespace HospitalManagement.Core.Common.Constants.DataProviderRouteConstants.Do
         public const string DeleteDoctor = "Doctor/DeleteDoctor";
 
         public const string GetAllDoctors = "Doctor/GetAllDoctors";
+
+        public const string GetDoctorBySpecialization = "Doctor/GetDoctorBySpecialization";
     }
 }

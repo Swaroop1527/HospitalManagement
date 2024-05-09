@@ -143,5 +143,25 @@ namespace HospitalManagement.Repository
             }
             return null;
         }
+
+        public List<Doctor> GetDoctorBySpecialization(string specialization)
+        {
+            for (int i = 0; i < RETRY_COUNT; i++)
+            {
+                try
+                {
+                    using (HospitalDBContext context = new HospitalDBContext(_hospitalDBConnectionInfo))
+                    {
+                        List<Doctor> doctors = context.Doctor.Where(d => d.Specialization == specialization).ToList();
+                        return doctors;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical(0, ex.Message, "Error on retrieving the doctor information with the provided id");
+                }
+            }
+            return null;
+        }
     }   
 }

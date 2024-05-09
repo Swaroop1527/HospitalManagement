@@ -18,5 +18,7 @@ namespace HospitalManagement.DataProvider.Common.Interfaces
         APIResult<bool> DeleteDoctor(Guid doctorId);
 
         APIResult<List<Doctor>> GetAllDoctors();
+
+        APIResult<List<Doctor>> GetDoctorBySpecialization(string specialization);
     }
 }
