@@ -16,19 +16,19 @@ namespace HospitalManagement.Core.Common.Models
         public Guid Id { get; set; }
 
         [JsonProperty]
-        public Guid HeadOfficeId { get; set; }
+        public Guid HeadofficeList { get; set; }
 
         [JsonProperty]
         public string? BranchName { get; set; } = string.Empty;
 
         [JsonProperty]
-        public string? BranchCode { get; set; } = string.Empty;
+        public string? Branchcode { get; set; } = string.Empty;
 
         [JsonProperty]
-        public string? Services { get; set; } = string.Empty;
+        public string? BranchServices { get; set; } = string.Empty;
 
         [JsonProperty]
-        public string? BranchManagerName { get; set; } = string.Empty;
+        public string? Managername { get; set; } = string.Empty;
 
         [JsonProperty]
         public override string? Address { get; set; } = string.Empty;
